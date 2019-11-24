@@ -7,7 +7,7 @@ package khpi.laba5;
 
 /**
  *
- * @author anna
+ * @author anna goncharova
  */
 public class calculator extends javax.swing.JFrame {
 public float num1;
