@@ -125,6 +125,11 @@ public String safe;
         });
 
         jButton9.setText("9");
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -397,7 +402,7 @@ jTextArea1.append("7");
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
      num2 =  Float.parseFloat (jTextArea1.getText());
-  /*  switch() {
+   switch(safe) {
             case "+":
                 System.out.println();
                 break;
@@ -417,7 +422,7 @@ jTextArea1.append("7");
         }
     }
 }
-    */
+    
 
 
 
@@ -425,7 +430,7 @@ jTextArea1.append("7");
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
- float num1,  result; 
+ float num1, result; 
                num1 = Float.parseFloat( jTextArea1.getText() );
                result = num1/100;
                   jTextArea1.setText( String.valueOf( result ) );        // TODO add your handling code here:
@@ -448,7 +453,7 @@ jTextArea1.append("1");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-jTextArea1.append("8");        // TODO add your handling code here:
+        jTextArea1.append("8");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -464,7 +469,7 @@ jTextArea1.append("0");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-jTextArea1.append("9");        // TODO add your handling code here:
+        jTextArea1.append("9");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -531,6 +536,10 @@ jTextArea1.getText().substring(0,jTextArea1.getText().length()-2);        // TOD
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
     // TODO add your handling code here:
     }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        jTextArea1.append("9");
+    }//GEN-LAST:event_jButton9MouseClicked
 
     /**
      * @param args the command line arguments
